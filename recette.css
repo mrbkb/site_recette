@@ -1,51 +1,58 @@
-body{
+* {
+    overflow: auto;
+}
+
+body {
     background-color: #8BA1BB;
     font-family: Arial;
-    margin:0;
+    margin: 0;
 }
-div.categorie{
+
+div.categorie {
     text-align: center;
     margin-top: -10px;
     margin-bottom: 0px;
     overflow: visible;
 }
-p.categorie{
+
+p.categorie {
     background-color: black;
     color: white;
     display: inline-block;
     padding: 8px 18px;
-    margin-top:0px ;
+    margin-top: 0px;
     margin-left: 0px;
     margin-bottom: 0;
 
 }
 
-div.contenu{
-    box-shadow:0px 0px 8px 8px #5C8290;
-    min-width: 350px;
+div.contenu {
+    box-shadow: 0px 0px 8px 8px #5C8290;
     background-color: white;
-    margin: 60px 10% 80px 10%;
-    padding: 0px 30px 30px 30px;
+    margin: 40px 8px 40px 8px;
+    padding: 0px 8px 20px 8px;
     overflow: visible;
 }
 
-h1{
+h1 {
     text-align: center;
     margin-bottom: 12px;
     margin-top: 10px;
 }
 
-p.description{
+p.description {
     text-align: center;
     max-width: 400px;
     display: inline-block;
     font-size: 14px;
 }
-.description{
+
+.description {
     text-align: center;
     width: 100%;
 }
-.separateur{
+
+.separateur {
     height: 1px;
     width: 100px;
     background-color: black;
@@ -53,32 +60,33 @@ p.description{
     margin-right: auto;
 }
 
-div.info{
+div.info {
     position: relative;
 }
 
-table.info{
+table.info {
     position: absolute;
     bottom: 0;
     width: 100%;
     color: white;
-    height: 88px;
+    height: 50px;
     background-color: #6C829DC0;
 
 }
-table.info td{
+
+table.info td {
     text-align: center;
-    font-size: 14px;
+    font-size: 12px;
     vertical-align: top;
 }
 
-table.info th{
-    font-size: 16px;
+table.info th {
+    font-size: 14px;
     vertical-align: bottom;
     padding-bottom: px;
 }
 
-img.info{
+img.info {
     display: block;
     max-height: 400px;
     object-fit: cover;
@@ -87,11 +95,11 @@ img.info{
 }
 
 div.colonne {
-    width: 45%;
+    width: 100%;
     margin-top: 20px;
 }
 
-.colonne h2{
+.colonne h2 {
     text-align: center;
     text-transform: uppercase;
     font-size: 15px;
@@ -99,22 +107,20 @@ div.colonne {
     padding-bottom: 5px;
 }
 
-div.colonne1{
+div.colonne1 {
     display: inline-block;
-    margin-right: 10%;
- 
+
+
 }
 
-div.colonne2{
-float: right;
-}
 
-div.ingredients{
-   
+
+div.ingredients {
+
     text-align: center;
 }
 
-div.ingredients p{
+div.ingredients p {
     font-size: 14px;
     padding: 8px 0px;
     border: 1px solid lightgrey;
@@ -122,7 +128,7 @@ div.ingredients p{
     margin-bottom: 0px;
 }
 
-table.preparation p.numero{
+table.preparation p.numero {
     background-color: #6CB29D;
     color: white;
     width: 25px;
@@ -136,19 +142,70 @@ table.preparation p.numero{
     margin: 0;
 }
 
-table.preparation td{
+table.preparation td {
     vertical-align: top;
 }
 
-table.preparation tr{
+table.preparation tr {
     height: 40px;
 }
-table.preparation td.preparation_etape{
+
+table.preparation td.preparation_etape {
     font-size: 14px;
     padding-left: 10px;
     padding-bottom: 10px;
 }
 
-*{
-    overflow: auto;
+
+
+/*Styles pour ordinateur*/
+
+@media only screen and (min-width: 768px) {
+    div.contenu {
+        min-width: 350px;
+        margin: 60px 10% 80px 10%;
+        padding: 0px 30px 30px 30px;
+
+    }
+
+    table.info {
+
+        height: 88px;
+
+    }
+
+    table.info td {
+
+        font-size: 14px;
+
+    }
+
+    table.info th {
+        font-size: 16px;
+    }
+
+    div.colonne {
+        width: 45%;
+    }
+    
+    
+    div.colonne1 {
+
+        margin-right: 10%;
+    
+    }
+    
+    div.colonne2 {
+        float: right;
+    }
 }
+
+@media only screen and (min-width: 900px){
+    div.contenu {
+        min-width: 350px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 645px;
+
+    }
+} 
